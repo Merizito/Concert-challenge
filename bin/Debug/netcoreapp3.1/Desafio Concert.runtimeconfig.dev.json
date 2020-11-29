@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Merizito\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Merizito\\.nuget\\packages"
+    ]
+  }
+}
