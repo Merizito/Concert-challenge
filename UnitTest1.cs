@@ -118,9 +118,14 @@ namespace Desafio_Concert
             IWebElement searchInput = driver.FindElement(By.CssSelector("#tsf > div:nth-child(2) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input"));
             IWebElement search_btn = driver.FindElement(By.CssSelector("#tsf > div:nth-child(2) > div.A8SBwf > div.FPdoLc.tfB0Bf > center > input.gNO89b")); 
             
+            // This element is used to close the suggestions box of input text with an click, because the suggestions box was breaking the code.
+            IWebElement CloseSuggestions = driver.FindElement(By.CssSelector("#fbar > div > div > div")); 
+            
             searchInput.SendKeys(textSearch);
             Thread.Sleep(1000);
 
+            CloseSuggestions.Click();
+            
             search_btn.Click();
             Thread.Sleep(5000);
 
